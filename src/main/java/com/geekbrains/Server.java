@@ -55,11 +55,9 @@ public class Server {
                 iterator.remove();
                 // читаем сообщения
 
-
             }
         }
     }
-
     private void handleRead(SelectionKey key) throws IOException {
         // заведем буфер
         ByteBuffer buf = ByteBuffer.allocate(1024);
@@ -108,7 +106,6 @@ public class Server {
             else if (str.equals("cat")){
                 commandCat(s,st1);
             }
-
 
 
             }
